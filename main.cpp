@@ -30,11 +30,14 @@ int main(int argc, char *argv[])
     MyModel.addCall(Call(11,"bar",dTime,1));
     MyModel.addCall(Call(3,"bar",dTime,1));
     MyModel.addCall(Call(3,"zlpkt",dTime,1));
+    MyModel.addCall(Call(3,"zlpkt2",dTime,2));
+    MyModel.addCall(Call(11,"zlpkt3",dTime,1));
 
 
     myCallListModel MyMissedModel;
     MyMissedModel.addCall(Call(3,"fo",dTime,2));
     MyMissedModel.addCall(Call(3,"fooo",dTime,2));
+    MyMissedModel.addCall(Call(3,"zlpkt2",dTime,2));
 
     engine.rootContext()->setContextProperty("myModel",&MyModel);
     engine.rootContext()->setContextProperty("myMissedModel",&MyMissedModel);
