@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>img/call3.svg</file>
+        <file>img/calll.png</file>
+        <file>img/info.png</file>
+        <file>img/typoIPhone.png</file>
+        <file>ContactsListView.qml</file>
+        <file>img/missed-call_icon.png</file>
+    </qresource>
+</RCC>
